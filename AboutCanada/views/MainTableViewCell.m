@@ -34,7 +34,7 @@
 - (UITableViewCell *)loadContent:(Card *)card {
     _titleField.text = [card.title isKindOfClass:[NSNull class]] ? @"" : card.title;
     _descriptionField.text = [card.decription isKindOfClass:[NSNull class]] ? @"" : card.decription;
-
+    [self loadImage:card];
     self.layer.masksToBounds = YES;
     return self;
 }
@@ -87,5 +87,17 @@
 + (CGFloat)adjustment {
     UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
     return orientation == UIInterfaceOrientationPortrait ? 80 : 60;
+}
+
+- (void)loadImage:(Card *)card {
+    dispatch_queue_t myQueue = dispatch_queue_create("Download queue", NULL);
+    dispatch_async(myQueue, ^{
+        // Perform long running process
+        UIImage *image = [card download];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // Update the UI
+            _imageField.image = image;
+        });
+    });
 }
 @end
