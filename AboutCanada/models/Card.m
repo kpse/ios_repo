@@ -21,4 +21,37 @@
 
     return self;
 }
+
+- (UIImage *)download {
+
+    if (![_imageUrl isKindOfClass:[NSNull class]] && !_image) {
+        NSLog(@"%@ load image %@", _title, _imageUrl);
+        return _image = [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:_imageUrl]]];
+    }
+    if ([_imageUrl isKindOfClass:[NSNull class]]) {
+        return _image = [[self defaultImage] retain];
+    }
+    if (!_image) {
+        NSLog(@"load error image for title %@", _title);
+        return _image = [[self defaultImage] retain];
+    }
+    return _image;
+
+}
+
+- (UIImage *)defaultImage {
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"no_image" ofType:@"jpg"];
+    return [UIImage imageWithContentsOfFile:filePath];
+}
+
+- (void)dealloc {
+    [_title release];
+    [_decription release];
+    [_imageUrl release];
+    if (_image != nil){
+        [_image release];
+        _image = nil;
+    }
+    [super dealloc];
+}
 @end

@@ -10,10 +10,8 @@
 @property (retain, nonatomic) NSString *title, *decription, *imageUrl;
 @property (retain, atomic) UIImage *image;
 
-
 - (id)initWithTitle:(NSString *)title decription:(NSString *)decription imageUrl:(NSString *)imageUrl;
 - (UIImage *)download;
 - (UIImage *)defaultImage;
-
 
 @end
