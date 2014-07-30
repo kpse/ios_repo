@@ -34,6 +34,7 @@
 - (UITableViewCell *)loadContent:(Card *)card {
     _titleField.text = [card.title isKindOfClass:[NSNull class]] ? @"" : card.title;
     _descriptionField.text = [card.decription isKindOfClass:[NSNull class]] ? @"" : card.decription;
+
     self.layer.masksToBounds = YES;
     return self;
 }
@@ -67,7 +68,24 @@
 }
 
 + (CGFloat)contentHeight:(Card *)card {
-    return 120;
+    NSString *desc = [card.decription isKindOfClass:[NSNull class]] ? @"" : card.decription;
+    NSString *title = [card.title isKindOfClass:[NSNull class]] ? @"" : card.title;
+    CGSize constraint = CGSizeMake([self adjustmentSpace], 20000.0f);
+    CGSize descriptionSize = [desc sizeWithFont:[UIFont systemFontOfSize:15] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
+    CGSize labelSize = [title sizeWithFont:[UIFont boldSystemFontOfSize:16] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
+    CGFloat height = descriptionSize.height + labelSize.height + [self adjustment];
+    return height > 50 ? height : 50;
+
+
 }
 
++ (CGFloat)adjustmentSpace {
+    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+    return orientation == UIInterfaceOrientationPortrait ? 240 : 600;
+}
+
++ (CGFloat)adjustment {
+    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+    return orientation == UIInterfaceOrientationPortrait ? 80 : 60;
+}
 @end
