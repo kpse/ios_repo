@@ -19,7 +19,15 @@
 		056B422B1989292B008E67A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056B42131989292B008E67A9 /* UIKit.framework */; };
 		056B42331989292B008E67A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 056B42311989292B008E67A9 /* InfoPlist.strings */; };
 		056B42351989292B008E67A9 /* AboutCanadaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 056B42341989292B008E67A9 /* AboutCanadaTests.m */; };
+		351C300CF042379F04D23A67 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C302C6EC3099B849F17F5 /* NSDictionary_JSONExtensions.m */; };
+		351C3237422F083A17887C64 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C3F11CB3C9B7D19CF0FB9 /* CJSONDeserializer.m */; };
 		351C389511680B892D1F2BCA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C3CB8C5C9BEC2A1A0B897 /* MainViewController.m */; };
+		351C39838E29D6829FC52E6B /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C3DFFB1190AF19BE1F794 /* CJSONSerializer.m */; };
+		351C3C7A22F86F21F36D192C /* JsonLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C392AE7531BE44F52D457 /* JsonLoader.m */; };
+		351C3D1CB211B6255BB54BB0 /* JsonLoaderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C361D232DB3321FE7D52C /* JsonLoaderTest.m */; };
+		351C3DFDD2E4BCB4B24247F5 /* Page.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C3944F7B7174747A3B412 /* Page.m */; };
+		351C3EC5D6D1FB932342F94C /* facts.json in Resources */ = {isa = PBXBuildFile; fileRef = 351C383BEC8ECFE402379598 /* facts.json */; };
+		351C3F2FB21C1481DBE44F11 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C3F2B03DEFCBFF02F2449 /* Card.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +57,23 @@
 		056B42301989292B008E67A9 /* AboutCanadaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AboutCanadaTests-Info.plist"; sourceTree = "<group>"; };
 		056B42321989292B008E67A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		056B42341989292B008E67A9 /* AboutCanadaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutCanadaTests.m; sourceTree = "<group>"; };
+		351C302C6EC3099B849F17F5 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
+		351C3065E4D46BB03290E48E /* JsonLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonLoader.h; sourceTree = "<group>"; };
+		351C31CD41B6771915C6FD5B /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
+		351C353693F29AC094FAF608 /* Page.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page.h; sourceTree = "<group>"; };
+		351C361540342EC8763E3F9F /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
+		351C361D232DB3321FE7D52C /* JsonLoaderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JsonLoaderTest.m; path = models/JsonLoaderTest.m; sourceTree = "<group>"; };
+		351C3689DA4EFC3AAC13AD91 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		351C36E07748DDD9D2718E97 /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
+		351C383BEC8ECFE402379598 /* facts.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = facts.json; sourceTree = "<group>"; };
+		351C392AE7531BE44F52D457 /* JsonLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonLoader.m; sourceTree = "<group>"; };
+		351C3944F7B7174747A3B412 /* Page.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page.m; sourceTree = "<group>"; };
 		351C39F41DFBFE36F467669B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		351C3C809231A31808546B2E /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRepresentation.h; sourceTree = "<group>"; };
 		351C3CB8C5C9BEC2A1A0B897 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		351C3DFFB1190AF19BE1F794 /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
+		351C3F11CB3C9B7D19CF0FB9 /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
+		351C3F2B03DEFCBFF02F2449 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +107,7 @@
 				056B422E1989292B008E67A9 /* AboutCanadaTests */,
 				056B420E1989292B008E67A9 /* Frameworks */,
 				056B420D1989292B008E67A9 /* Products */,
+				351C3760D4D570EB9D5BE2B8 /* Source */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +139,8 @@
 				056B42211989292B008E67A9 /* Images.xcassets */,
 				056B42161989292B008E67A9 /* Supporting Files */,
 				351C395631E060FABE770657 /* controllers */,
+				351C38C6E026B07A8D1B8317 /* models */,
+				351C364C416A70754CC83DB9 /* res */,
 			);
 			path = AboutCanada;
 			sourceTree = "<group>";
@@ -135,6 +161,7 @@
 			children = (
 				056B42341989292B008E67A9 /* AboutCanadaTests.m */,
 				056B422F1989292B008E67A9 /* Supporting Files */,
+				351C361D232DB3321FE7D52C /* JsonLoaderTest.m */,
 			);
 			path = AboutCanadaTests;
 			sourceTree = "<group>";
@@ -146,6 +173,41 @@
 				056B42311989292B008E67A9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		351C364C416A70754CC83DB9 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				351C383BEC8ECFE402379598 /* facts.json */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		351C3760D4D570EB9D5BE2B8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				351C36E07748DDD9D2718E97 /* CJSONSerializer.h */,
+				351C3DFFB1190AF19BE1F794 /* CJSONSerializer.m */,
+				351C31CD41B6771915C6FD5B /* CJSONDeserializer.h */,
+				351C3F11CB3C9B7D19CF0FB9 /* CJSONDeserializer.m */,
+				351C3C809231A31808546B2E /* JSONRepresentation.h */,
+				351C361540342EC8763E3F9F /* NSDictionary_JSONExtensions.h */,
+				351C302C6EC3099B849F17F5 /* NSDictionary_JSONExtensions.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		351C38C6E026B07A8D1B8317 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				351C3065E4D46BB03290E48E /* JsonLoader.h */,
+				351C392AE7531BE44F52D457 /* JsonLoader.m */,
+				351C3944F7B7174747A3B412 /* Page.m */,
+				351C353693F29AC094FAF608 /* Page.h */,
+				351C3F2B03DEFCBFF02F2449 /* Card.m */,
+				351C3689DA4EFC3AAC13AD91 /* Card.h */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 		351C395631E060FABE770657 /* controllers */ = {
@@ -234,6 +296,7 @@
 			files = (
 				056B421A1989292B008E67A9 /* InfoPlist.strings in Resources */,
 				056B42221989292B008E67A9 /* Images.xcassets in Resources */,
+				351C3EC5D6D1FB932342F94C /* facts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +318,12 @@
 				056B42201989292B008E67A9 /* AppDelegate.m in Sources */,
 				056B421C1989292B008E67A9 /* main.m in Sources */,
 				351C389511680B892D1F2BCA /* MainViewController.m in Sources */,
+				351C3C7A22F86F21F36D192C /* JsonLoader.m in Sources */,
+				351C39838E29D6829FC52E6B /* CJSONSerializer.m in Sources */,
+				351C3237422F083A17887C64 /* CJSONDeserializer.m in Sources */,
+				351C300CF042379F04D23A67 /* NSDictionary_JSONExtensions.m in Sources */,
+				351C3DFDD2E4BCB4B24247F5 /* Page.m in Sources */,
+				351C3F2FB21C1481DBE44F11 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				056B42351989292B008E67A9 /* AboutCanadaTests.m in Sources */,
+				351C3D1CB211B6255BB54BB0 /* JsonLoaderTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +373,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -341,7 +411,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
