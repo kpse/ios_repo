@@ -19,7 +19,7 @@
 		056B422B1989292B008E67A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056B42131989292B008E67A9 /* UIKit.framework */; };
 		056B42331989292B008E67A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 056B42311989292B008E67A9 /* InfoPlist.strings */; };
 		056B42351989292B008E67A9 /* AboutCanadaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 056B42341989292B008E67A9 /* AboutCanadaTests.m */; };
-		351C3A76DAB4573DF3AD6F3D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C394434798EA04F5A1CB4 /* MainViewController.m */; };
+		351C389511680B892D1F2BCA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C3CB8C5C9BEC2A1A0B897 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +49,8 @@
 		056B42301989292B008E67A9 /* AboutCanadaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AboutCanadaTests-Info.plist"; sourceTree = "<group>"; };
 		056B42321989292B008E67A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		056B42341989292B008E67A9 /* AboutCanadaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutCanadaTests.m; sourceTree = "<group>"; };
-		351C383C11C8AABAFBE25D14 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		351C394434798EA04F5A1CB4 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		351C39F41DFBFE36F467669B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		351C3CB8C5C9BEC2A1A0B897 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +114,7 @@
 				056B421F1989292B008E67A9 /* AppDelegate.m */,
 				056B42211989292B008E67A9 /* Images.xcassets */,
 				056B42161989292B008E67A9 /* Supporting Files */,
-				351C394434798EA04F5A1CB4 /* MainViewController.m */,
-				351C383C11C8AABAFBE25D14 /* MainViewController.h */,
+				351C395631E060FABE770657 /* controllers */,
 			);
 			path = AboutCanada;
 			sourceTree = "<group>";
@@ -147,6 +146,15 @@
 				056B42311989292B008E67A9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		351C395631E060FABE770657 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				351C39F41DFBFE36F467669B /* MainViewController.h */,
+				351C3CB8C5C9BEC2A1A0B897 /* MainViewController.m */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,7 +254,7 @@
 			files = (
 				056B42201989292B008E67A9 /* AppDelegate.m in Sources */,
 				056B421C1989292B008E67A9 /* main.m in Sources */,
-				351C3A76DAB4573DF3AD6F3D /* MainViewController.m in Sources */,
+				351C389511680B892D1F2BCA /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
