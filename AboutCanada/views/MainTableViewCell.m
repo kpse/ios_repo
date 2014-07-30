@@ -26,7 +26,7 @@
 
         [self setUpDescriptionField];
 
-
+        [self setUpAutoLayout];
     }
     return self;
 }
@@ -40,7 +40,7 @@
 }
 
 - (void)setUpDescriptionField {
-    _descriptionField = [[[UITextView alloc] initWithFrame:CGRectMake(10, 90, 300, 20)] autorelease];
+    _descriptionField = [[UITextView new] autorelease];
     _descriptionField.textAlignment = NSTextAlignmentLeft;
     _descriptionField.font = [UIFont systemFontOfSize:14];
     _descriptionField.autoresizingMask = UIViewAutoresizingFlexibleHeight;
@@ -51,13 +51,13 @@
 }
 
 - (void)setUpImageField {
-    _imageField = [[[UIImageView alloc] initWithFrame:CGRectMake(110, 40, 100, 50)] autorelease];
+    _imageField = [[UIImageView new] autorelease];
     _imageField.translatesAutoresizingMaskIntoConstraints = NO;
     [self.contentView addSubview:_imageField];
 }
 
 - (void)setUpTitleField {
-    _titleField = [[[UILabel alloc] initWithFrame:CGRectMake(10, 10, 300, 20)] autorelease];
+    _titleField = [[UILabel new] autorelease];
     _titleField.textAlignment = NSTextAlignmentCenter;
     _titleField.font = [UIFont boldSystemFontOfSize:16];
     _titleField.textColor = [UIColor blueColor];
@@ -99,5 +99,37 @@
             _imageField.image = image;
         });
     });
+}
+
+- (void)setUpAutoLayout {
+    NSDictionary *views =
+            @{@"title" : _titleField, @"description" : _descriptionField, @"image" : _imageField};
+
+    NSArray *layouts = @[@"|-5-[title]-5-|", @"|-5-[description]-[image]-5-|",
+            @"V:|-5-[title]-5-[image]-|", @"V:|-5-[title]-5-[description]-|"];
+
+    [layouts enumerateObjectsUsingBlock:^(NSString *layout, NSUInteger idx, BOOL *stop) {
+        NSArray *constraint = [NSLayoutConstraint constraintsWithVisualFormat:layout
+                                                                      options:0
+                                                                      metrics:nil
+                                                                        views:views];
+        [self.contentView addConstraints:constraint];
+    }];
+
+
+    NSArray *imageWidth = [NSLayoutConstraint constraintsWithVisualFormat:@"[image(<=100)]"
+                                                                  options:0
+                                                                  metrics:nil
+                                                                    views:views];
+
+    NSArray *titleHeight = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[title(<=20)]"
+                                                                   options:0
+                                                                   metrics:nil
+                                                                     views:views];
+
+
+    [_titleField addConstraints:titleHeight];
+    [_imageField addConstraints:imageWidth];
+
 }
 @end
