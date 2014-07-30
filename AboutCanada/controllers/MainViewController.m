@@ -28,6 +28,13 @@
     _page = [[[[JsonLoader new] autorelease] loadContent] retain];
 
     self.navigationItem.title = _page.title;
+
+    self.refreshControl = [[UIRefreshControl new] autorelease];
+    self.refreshControl.tintColor = [UIColor blackColor];
+    self.refreshControl.attributedTitle = [[[NSAttributedString alloc]
+            initWithString:@"Refresh"] autorelease];
+    [self.refreshControl addTarget:self action:@selector(refreshData)
+                  forControlEvents:UIControlEventValueChanged];
 }
 
 
@@ -62,6 +69,21 @@
 
     return [MainTableViewCell contentHeight:_page.cards[indexPath.row]];
 
+}
+
+- (void) refreshData
+{
+    if(_page) {
+        [_page release];
+    }
+    _page = [[[[JsonLoader new] autorelease] loadContent] retain];
+
+    self.navigationItem.title = _page.title;
+
+    self.refreshControl.attributedTitle = [[[NSAttributedString alloc]
+            initWithString:@"Refreshing..."] autorelease];
+    [self.refreshControl endRefreshing];
+    [self.tableView reloadData];
 }
 
 @end
