@@ -3,10 +3,10 @@
 // Copyright (c) 2014 ___FULLUSERNAME___. All rights reserved.
 //
 
+#import "MainViewController.h"
 #import "JsonLoader.h"
 #import "Page.h"
 #import "Card.h"
-#import "MainViewController.h"
 #import "MainTableViewCell.h"
 
 
@@ -35,6 +35,7 @@
             initWithString:@"Refresh"] autorelease];
     [self.refreshControl addTarget:self action:@selector(refreshData)
                   forControlEvents:UIControlEventValueChanged];
+    self.view.bounds = [[UIScreen mainScreen] bounds];
 }
 
 
