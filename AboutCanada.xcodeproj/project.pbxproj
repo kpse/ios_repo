@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		056B42101989292B008E67A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056B420F1989292B008E67A9 /* Foundation.framework */; };
+		056B42121989292B008E67A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056B42111989292B008E67A9 /* CoreGraphics.framework */; };
+		056B42141989292B008E67A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056B42131989292B008E67A9 /* UIKit.framework */; };
+		056B421A1989292B008E67A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 056B42181989292B008E67A9 /* InfoPlist.strings */; };
+		056B421C1989292B008E67A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 056B421B1989292B008E67A9 /* main.m */; };
+		056B42201989292B008E67A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 056B421F1989292B008E67A9 /* AppDelegate.m */; };
+		056B42221989292B008E67A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 056B42211989292B008E67A9 /* Images.xcassets */; };
+		056B42291989292B008E67A9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056B42281989292B008E67A9 /* XCTest.framework */; };
+		056B422A1989292B008E67A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056B420F1989292B008E67A9 /* Foundation.framework */; };
+		056B422B1989292B008E67A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056B42131989292B008E67A9 /* UIKit.framework */; };
+		056B42331989292B008E67A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 056B42311989292B008E67A9 /* InfoPlist.strings */; };
+		056B42351989292B008E67A9 /* AboutCanadaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 056B42341989292B008E67A9 /* AboutCanadaTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		056B422C1989292B008E67A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 056B42041989292B008E67A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 056B420B1989292B008E67A9;
+			remoteInfo = AboutCanada;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		056B420C1989292B008E67A9 /* AboutCanada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutCanada.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		056B420F1989292B008E67A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		056B42111989292B008E67A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		056B42131989292B008E67A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		056B42171989292B008E67A9 /* AboutCanada-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AboutCanada-Info.plist"; sourceTree = "<group>"; };
+		056B42191989292B008E67A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		056B421B1989292B008E67A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		056B421D1989292B008E67A9 /* AboutCanada-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AboutCanada-Prefix.pch"; sourceTree = "<group>"; };
+		056B421E1989292B008E67A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		056B421F1989292B008E67A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		056B42211989292B008E67A9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		056B42271989292B008E67A9 /* AboutCanadaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AboutCanadaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		056B42281989292B008E67A9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		056B42301989292B008E67A9 /* AboutCanadaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AboutCanadaTests-Info.plist"; sourceTree = "<group>"; };
+		056B42321989292B008E67A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		056B42341989292B008E67A9 /* AboutCanadaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutCanadaTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		056B42091989292B008E67A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056B42121989292B008E67A9 /* CoreGraphics.framework in Frameworks */,
+				056B42141989292B008E67A9 /* UIKit.framework in Frameworks */,
+				056B42101989292B008E67A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		056B42241989292B008E67A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056B42291989292B008E67A9 /* XCTest.framework in Frameworks */,
+				056B422B1989292B008E67A9 /* UIKit.framework in Frameworks */,
+				056B422A1989292B008E67A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		056B42031989292B008E67A9 = {
+			isa = PBXGroup;
+			children = (
+				056B42151989292B008E67A9 /* AboutCanada */,
+				056B422E1989292B008E67A9 /* AboutCanadaTests */,
+				056B420E1989292B008E67A9 /* Frameworks */,
+				056B420D1989292B008E67A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		056B420D1989292B008E67A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				056B420C1989292B008E67A9 /* AboutCanada.app */,
+				056B42271989292B008E67A9 /* AboutCanadaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		056B420E1989292B008E67A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				056B420F1989292B008E67A9 /* Foundation.framework */,
+				056B42111989292B008E67A9 /* CoreGraphics.framework */,
+				056B42131989292B008E67A9 /* UIKit.framework */,
+				056B42281989292B008E67A9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		056B42151989292B008E67A9 /* AboutCanada */ = {
+			isa = PBXGroup;
+			children = (
+				056B421E1989292B008E67A9 /* AppDelegate.h */,
+				056B421F1989292B008E67A9 /* AppDelegate.m */,
+				056B42211989292B008E67A9 /* Images.xcassets */,
+				056B42161989292B008E67A9 /* Supporting Files */,
+			);
+			path = AboutCanada;
+			sourceTree = "<group>";
+		};
+		056B42161989292B008E67A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				056B42171989292B008E67A9 /* AboutCanada-Info.plist */,
+				056B42181989292B008E67A9 /* InfoPlist.strings */,
+				056B421B1989292B008E67A9 /* main.m */,
+				056B421D1989292B008E67A9 /* AboutCanada-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		056B422E1989292B008E67A9 /* AboutCanadaTests */ = {
+			isa = PBXGroup;
+			children = (
+				056B42341989292B008E67A9 /* AboutCanadaTests.m */,
+				056B422F1989292B008E67A9 /* Supporting Files */,
+			);
+			path = AboutCanadaTests;
+			sourceTree = "<group>";
+		};
+		056B422F1989292B008E67A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				056B42301989292B008E67A9 /* AboutCanadaTests-Info.plist */,
+				056B42311989292B008E67A9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		056B420B1989292B008E67A9 /* AboutCanada */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 056B42381989292B008E67A9 /* Build configuration list for PBXNativeTarget "AboutCanada" */;
+			buildPhases = (
+				056B42081989292B008E67A9 /* Sources */,
+				056B42091989292B008E67A9 /* Frameworks */,
+				056B420A1989292B008E67A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AboutCanada;
+			productName = AboutCanada;
+			productReference = 056B420C1989292B008E67A9 /* AboutCanada.app */;
+			productType = "com.apple.product-type.application";
+		};
+		056B42261989292B008E67A9 /* AboutCanadaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 056B423B1989292B008E67A9 /* Build configuration list for PBXNativeTarget "AboutCanadaTests" */;
+			buildPhases = (
+				056B42231989292B008E67A9 /* Sources */,
+				056B42241989292B008E67A9 /* Frameworks */,
+				056B42251989292B008E67A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				056B422D1989292B008E67A9 /* PBXTargetDependency */,
+			);
+			name = AboutCanadaTests;
+			productName = AboutCanadaTests;
+			productReference = 056B42271989292B008E67A9 /* AboutCanadaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		056B42041989292B008E67A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					056B42261989292B008E67A9 = {
+						TestTargetID = 056B420B1989292B008E67A9;
+					};
+				};
+			};
+			buildConfigurationList = 056B42071989292B008E67A9 /* Build configuration list for PBXProject "AboutCanada" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 056B42031989292B008E67A9;
+			productRefGroup = 056B420D1989292B008E67A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				056B420B1989292B008E67A9 /* AboutCanada */,
+				056B42261989292B008E67A9 /* AboutCanadaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		056B420A1989292B008E67A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056B421A1989292B008E67A9 /* InfoPlist.strings in Resources */,
+				056B42221989292B008E67A9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		056B42251989292B008E67A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056B42331989292B008E67A9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		056B42081989292B008E67A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056B42201989292B008E67A9 /* AppDelegate.m in Sources */,
+				056B421C1989292B008E67A9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		056B42231989292B008E67A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056B42351989292B008E67A9 /* AboutCanadaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		056B422D1989292B008E67A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 056B420B1989292B008E67A9 /* AboutCanada */;
+			targetProxy = 056B422C1989292B008E67A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		056B42181989292B008E67A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				056B42191989292B008E67A9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		056B42311989292B008E67A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				056B42321989292B008E67A9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		056B42361989292B008E67A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		056B42371989292B008E67A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		056B42391989292B008E67A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AboutCanada/AboutCanada-Prefix.pch";
+				INFOPLIST_FILE = "AboutCanada/AboutCanada-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		056B423A1989292B008E67A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AboutCanada/AboutCanada-Prefix.pch";
+				INFOPLIST_FILE = "AboutCanada/AboutCanada-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		056B423C1989292B008E67A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AboutCanada.app/AboutCanada";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AboutCanada/AboutCanada-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AboutCanadaTests/AboutCanadaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		056B423D1989292B008E67A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AboutCanada.app/AboutCanada";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AboutCanada/AboutCanada-Prefix.pch";
+				INFOPLIST_FILE = "AboutCanadaTests/AboutCanadaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		056B42071989292B008E67A9 /* Build configuration list for PBXProject "AboutCanada" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				056B42361989292B008E67A9 /* Debug */,
+				056B42371989292B008E67A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		056B42381989292B008E67A9 /* Build configuration list for PBXNativeTarget "AboutCanada" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				056B42391989292B008E67A9 /* Debug */,
+				056B423A1989292B008E67A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		056B423B1989292B008E67A9 /* Build configuration list for PBXNativeTarget "AboutCanadaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				056B423C1989292B008E67A9 /* Debug */,
+				056B423D1989292B008E67A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 056B42041989292B008E67A9 /* Project object */;
+}
