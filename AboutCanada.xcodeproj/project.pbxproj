@@ -21,9 +21,9 @@
 		056B42351989292B008E67A9 /* AboutCanadaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 056B42341989292B008E67A9 /* AboutCanadaTests.m */; };
 		351C300CF042379F04D23A67 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C302C6EC3099B849F17F5 /* NSDictionary_JSONExtensions.m */; };
 		351C3237422F083A17887C64 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C3F11CB3C9B7D19CF0FB9 /* CJSONDeserializer.m */; };
-		351C330402B839B4FA6E163C /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C38F6214DDF02F5926FE9 /* MainTableViewCell.m */; };
-		351C389511680B892D1F2BCA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C3CB8C5C9BEC2A1A0B897 /* MainViewController.m */; };
+		351C34199D7EF3050E256BA3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C33F79DB0EC4748E75310 /* MainViewController.m */; };
 		351C39838E29D6829FC52E6B /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C3DFFB1190AF19BE1F794 /* CJSONSerializer.m */; };
+		351C3A7F197B599A5B003142 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C336BA49E7FFF1C0FE15E /* MainTableViewCell.m */; };
 		351C3C7A22F86F21F36D192C /* JsonLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C392AE7531BE44F52D457 /* JsonLoader.m */; };
 		351C3CE1D8A02BC8EDDBEBFC /* no_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 351C309AB042114BEC9602C5 /* no_image.jpg */; };
 		351C3D1CB211B6255BB54BB0 /* JsonLoaderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C361D232DB3321FE7D52C /* JsonLoaderTest.m */; };
@@ -62,20 +62,20 @@
 		351C302C6EC3099B849F17F5 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
 		351C3065E4D46BB03290E48E /* JsonLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonLoader.h; sourceTree = "<group>"; };
 		351C309AB042114BEC9602C5 /* no_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = no_image.jpg; sourceTree = "<group>"; };
-		351C30E79DD45005BD506EBE /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
+		351C30DE77ECC50CFB40CFE7 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = controllers/MainViewController.h; sourceTree = "<group>"; };
 		351C31CD41B6771915C6FD5B /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
+		351C336BA49E7FFF1C0FE15E /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainTableViewCell.m; path = views/MainTableViewCell.m; sourceTree = "<group>"; };
+		351C33F79DB0EC4748E75310 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = controllers/MainViewController.m; sourceTree = "<group>"; };
 		351C353693F29AC094FAF608 /* Page.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page.h; sourceTree = "<group>"; };
 		351C361540342EC8763E3F9F /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
 		351C361D232DB3321FE7D52C /* JsonLoaderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JsonLoaderTest.m; path = models/JsonLoaderTest.m; sourceTree = "<group>"; };
 		351C3689DA4EFC3AAC13AD91 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 		351C36E07748DDD9D2718E97 /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
 		351C383BEC8ECFE402379598 /* facts.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = facts.json; sourceTree = "<group>"; };
-		351C38F6214DDF02F5926FE9 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
 		351C392AE7531BE44F52D457 /* JsonLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonLoader.m; sourceTree = "<group>"; };
 		351C3944F7B7174747A3B412 /* Page.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page.m; sourceTree = "<group>"; };
-		351C39F41DFBFE36F467669B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		351C3C809231A31808546B2E /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRepresentation.h; sourceTree = "<group>"; };
-		351C3CB8C5C9BEC2A1A0B897 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		351C3D122A55442A1C4488E8 /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainTableViewCell.h; path = views/MainTableViewCell.h; sourceTree = "<group>"; };
 		351C3DFFB1190AF19BE1F794 /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
 		351C3F11CB3C9B7D19CF0FB9 /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
 		351C3F2B03DEFCBFF02F2449 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
@@ -143,10 +143,12 @@
 				056B421F1989292B008E67A9 /* AppDelegate.m */,
 				056B42211989292B008E67A9 /* Images.xcassets */,
 				056B42161989292B008E67A9 /* Supporting Files */,
-				351C395631E060FABE770657 /* controllers */,
 				351C38C6E026B07A8D1B8317 /* models */,
 				351C364C416A70754CC83DB9 /* res */,
-				351C34216AA0A98AB06642BA /* views */,
+				351C30DE77ECC50CFB40CFE7 /* MainViewController.h */,
+				351C33F79DB0EC4748E75310 /* MainViewController.m */,
+				351C3D122A55442A1C4488E8 /* MainTableViewCell.h */,
+				351C336BA49E7FFF1C0FE15E /* MainTableViewCell.m */,
 			);
 			path = AboutCanada;
 			sourceTree = "<group>";
@@ -179,15 +181,6 @@
 				056B42311989292B008E67A9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		351C34216AA0A98AB06642BA /* views */ = {
-			isa = PBXGroup;
-			children = (
-				351C30E79DD45005BD506EBE /* MainTableViewCell.h */,
-				351C38F6214DDF02F5926FE9 /* MainTableViewCell.m */,
-			);
-			path = views;
 			sourceTree = "<group>";
 		};
 		351C364C416A70754CC83DB9 /* res */ = {
@@ -224,15 +217,6 @@
 				351C3689DA4EFC3AAC13AD91 /* Card.h */,
 			);
 			path = models;
-			sourceTree = "<group>";
-		};
-		351C395631E060FABE770657 /* controllers */ = {
-			isa = PBXGroup;
-			children = (
-				351C39F41DFBFE36F467669B /* MainViewController.h */,
-				351C3CB8C5C9BEC2A1A0B897 /* MainViewController.m */,
-			);
-			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,14 +318,14 @@
 			files = (
 				056B42201989292B008E67A9 /* AppDelegate.m in Sources */,
 				056B421C1989292B008E67A9 /* main.m in Sources */,
-				351C389511680B892D1F2BCA /* MainViewController.m in Sources */,
 				351C3C7A22F86F21F36D192C /* JsonLoader.m in Sources */,
 				351C39838E29D6829FC52E6B /* CJSONSerializer.m in Sources */,
 				351C3237422F083A17887C64 /* CJSONDeserializer.m in Sources */,
 				351C300CF042379F04D23A67 /* NSDictionary_JSONExtensions.m in Sources */,
 				351C3DFDD2E4BCB4B24247F5 /* Page.m in Sources */,
 				351C3F2FB21C1481DBE44F11 /* Card.m in Sources */,
-				351C330402B839B4FA6E163C /* MainTableViewCell.m in Sources */,
+				351C34199D7EF3050E256BA3 /* MainViewController.m in Sources */,
+				351C3A7F197B599A5B003142 /* MainTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
