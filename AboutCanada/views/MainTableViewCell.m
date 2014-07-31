@@ -7,7 +7,9 @@
 #import "Card.h"
 
 
-@implementation MainTableViewCell
+@implementation MainTableViewCell {
+    NSLayoutConstraint *_imageWidthContraint;
+}
 
 @synthesize titleField = _titleField;
 @synthesize descriptionField = _descriptionField;
@@ -75,8 +77,6 @@
     CGSize labelSize = [title sizeWithFont:[UIFont boldSystemFontOfSize:16] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
     CGFloat height = descriptionSize.height + labelSize.height + [self adjustment];
     return height > 50 ? height : 50;
-
-
 }
 
 + (CGFloat)adjustmentSpace {
@@ -96,9 +96,16 @@
         UIImage *image = [card download];
         dispatch_async(dispatch_get_main_queue(), ^{
             // Update the UI
-            _imageField.image = image;
+            if (image) {
+                _imageField.image = image;
+                [self removeImageLayout];
+            }
         });
     });
+}
+
+- (void)removeImageLayout {
+    [_imageWidthContraint setConstant:100];
 }
 
 - (void)setUpAutoLayout {
@@ -106,7 +113,7 @@
             @{@"title" : _titleField, @"description" : _descriptionField, @"image" : _imageField};
 
     NSArray *layouts = @[@"|-5-[title]-5-|", @"|-5-[description]-[image]-5-|",
-            @"V:|-5-[title]-5-[image]-|", @"V:|-5-[title]-5-[description]-|"];
+            @"V:|-5-[title]-5-[image]-1-|", @"V:|-5-[title]-5-[description]-1-|"];
 
     [layouts enumerateObjectsUsingBlock:^(NSString *layout, NSUInteger idx, BOOL *stop) {
         NSArray *constraint = [NSLayoutConstraint constraintsWithVisualFormat:layout
@@ -117,10 +124,13 @@
     }];
 
 
-    NSArray *imageWidth = [NSLayoutConstraint constraintsWithVisualFormat:@"[image(<=100)]"
-                                                                  options:0
-                                                                  metrics:nil
-                                                                    views:views];
+    _imageWidthContraint = [NSLayoutConstraint constraintWithItem:_imageField
+                                                        attribute:NSLayoutAttributeWidth
+                                                        relatedBy:NSLayoutRelationLessThanOrEqual
+                                                           toItem:nil
+                                                        attribute:NSLayoutAttributeNotAnAttribute
+                                                       multiplier:1.0f
+                                                         constant:0];
 
     NSArray *titleHeight = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[title(<=20)]"
                                                                    options:0
@@ -129,7 +139,8 @@
 
 
     [_titleField addConstraints:titleHeight];
-    [_imageField addConstraints:imageWidth];
-
+    [_imageField addConstraint:_imageWidthContraint];
 }
+
+
 @end

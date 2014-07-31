@@ -28,13 +28,6 @@
         NSLog(@"%@ load image %@", _title, _imageUrl);
         return _image = [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:_imageUrl]]];
     }
-    if ([_imageUrl isKindOfClass:[NSNull class]]) {
-        return _image = [[self defaultImage] retain];
-    }
-    if (!_image) {
-        NSLog(@"load error image for title %@", _title);
-        return _image = [[self defaultImage] retain];
-    }
     return _image;
 
 }
