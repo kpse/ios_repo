@@ -34,14 +34,6 @@
     XCTAssertEqual(page.cards.count, 14, @"Should have matched");
 }
 
-- (void)testImageDownloadDefaultImage {
-    Card *card = [[Card alloc] initWithTitle:@"title" decription:@"desc" imageUrl:[NSNull null]];
-    UIImage *image = [[card autorelease] download];
-    XCTAssertEqualObjects(card.title, @"title", @"Should have matched");
-    XCTAssertEqualObjects(card.decription, @"desc", @"Should have matched");
-    XCTAssertTrue(image != nil, @"Should not be empty");
-}
-
 - (void)testImageDownloadFailed {
     Card *card = [[Card alloc] initWithTitle:@"title" decription:@"desc" imageUrl:@""];
     UIImage *image = [[card autorelease] download];
