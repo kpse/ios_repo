@@ -32,11 +32,6 @@
 
 }
 
-- (UIImage *)defaultImage {
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"no_image" ofType:@"jpg"];
-    return [UIImage imageWithContentsOfFile:filePath];
-}
-
 - (void)dealloc {
     [_title release];
     [_decription release];
