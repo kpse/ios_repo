@@ -9,6 +9,7 @@
 
 @implementation MainTableViewCell {
     NSLayoutConstraint *_imageWidthContraint;
+    BOOL _didSet;
 }
 
 @synthesize titleField = _titleField;
@@ -115,6 +116,10 @@
 
 
 - (void)setUpAutoLayout {
+    if (_didSet){
+        return;
+    }
+    _didSet = YES;
     NSDictionary *views =
             @{@"title" : _titleField, @"description" : _descriptionField, @"image" : _imageField};
 
