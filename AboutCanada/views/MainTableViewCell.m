@@ -56,6 +56,7 @@
 - (void)setUpImageField {
     _imageField = [[UIImageView new] autorelease];
     _imageField.translatesAutoresizingMaskIntoConstraints = NO;
+    _imageField.contentMode = UIViewContentModeScaleAspectFit;
     [self.contentView addSubview:_imageField];
 }
 
