@@ -28,7 +28,7 @@
 
         [self setUpDescriptionField];
 
-        [self setUpAutoLayout];
+        [self setNeedsUpdateConstraints];
     }
     return self;
 }
@@ -107,6 +107,12 @@
 - (void)removeImageLayout {
     [_imageWidthContraint setConstant:100];
 }
+
+- (void)updateConstraints {
+    [self setUpAutoLayout];
+    [super updateConstraints];
+}
+
 
 - (void)setUpAutoLayout {
     NSDictionary *views =
