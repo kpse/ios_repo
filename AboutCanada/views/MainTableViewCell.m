@@ -10,12 +10,12 @@
 @implementation MainTableViewCell {
     NSLayoutConstraint *_imageWidthContraint;
     BOOL _didSet;
-    NSInteger _cellIndex;
 }
 
 @synthesize titleField = _titleField;
 @synthesize descriptionField = _descriptionField;
 @synthesize imageField = _imageField;
+@synthesize card = _card;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -35,12 +35,12 @@
     return self;
 }
 
-- (UITableViewCell *)loadContent:(Card *)card forIndex:(NSInteger)index {
+- (UITableViewCell *)loadContent:(Card *)card {
     _titleField.text = [card.title isKindOfClass:[NSNull class]] ? @"" : card.title;
     _descriptionField.text = [card.decription isKindOfClass:[NSNull class]] ? @"" : card.decription;
     _imageField.image = nil;
     [self removeImageLayout];
-    _cellIndex = index;
+    _card = card;
     [self loadImage:card];
     self.layer.masksToBounds = YES;
     return self;
@@ -99,12 +99,12 @@
     dispatch_queue_t myQueue = dispatch_queue_create("Download queue", NULL);
     dispatch_async(myQueue, ^{
         // Perform long running process
-        NSInteger oldIndex = _cellIndex;
+        NSString* imageUrl = card.imageUrl;
         UIImage *image = [card download];
 
         dispatch_async(dispatch_get_main_queue(), ^{
             // Update the UI
-            if (image && oldIndex == _cellIndex) {
+            if (image && _card.imageUrl == imageUrl) {
                 _imageField.image = image;
                 [self addImageLayout];
             }
@@ -162,6 +162,11 @@
 
     [_titleField addConstraints:titleHeight];
     [_imageField addConstraint:_imageWidthContraint];
+}
+
+- (void)dealloc {
+    [_card release];
+    [super dealloc];
 }
 
 

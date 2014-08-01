@@ -55,7 +55,7 @@
     static NSString *CellIdentifier = @"MainTableViewCell";
     MainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     cell = cell ? cell : [self createCell];
-    [cell loadContent:_page.cards[indexPath.row] forIndex:indexPath.row];
+    [cell loadContent:_page.cards[indexPath.row]];
 
     return cell;
 }
