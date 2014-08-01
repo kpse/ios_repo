@@ -79,8 +79,8 @@
     NSString *desc = [card.decription isKindOfClass:[NSNull class]] ? @"" : card.decription;
     NSString *title = [card.title isKindOfClass:[NSNull class]] ? @"" : card.title;
     CGSize constraint = CGSizeMake([self adjustmentSpace], 20000.0f);
-    CGSize descriptionSize = [desc sizeWithFont:[UIFont systemFontOfSize:15] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
-    CGSize labelSize = [title sizeWithFont:[UIFont boldSystemFontOfSize:16] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
+    CGSize descriptionSize = [desc sizeWithFont:[UIFont systemFontOfSize:15] constrainedToSize:constraint lineBreakMode:NSLineBreakByWordWrapping];
+    CGSize labelSize = [title sizeWithFont:[UIFont boldSystemFontOfSize:16] constrainedToSize:constraint lineBreakMode:NSLineBreakByWordWrapping];
     CGFloat height = descriptionSize.height + labelSize.height + [self adjustment];
     return height > 50 ? height : 50;
 }
