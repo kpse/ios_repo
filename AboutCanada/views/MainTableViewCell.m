@@ -10,6 +10,7 @@
 @implementation MainTableViewCell {
     NSLayoutConstraint *_imageWidthContraint;
     BOOL _didSet;
+    NSInteger _cellIndex;
 }
 
 @synthesize titleField = _titleField;
@@ -34,9 +35,12 @@
     return self;
 }
 
-- (UITableViewCell *)loadContent:(Card *)card {
+- (UITableViewCell *)loadContent:(Card *)card forIndex:(NSInteger)index {
     _titleField.text = [card.title isKindOfClass:[NSNull class]] ? @"" : card.title;
     _descriptionField.text = [card.decription isKindOfClass:[NSNull class]] ? @"" : card.decription;
+    _imageField.image = nil;
+    [self removeImageLayout];
+    _cellIndex = index;
     [self loadImage:card];
     self.layer.masksToBounds = YES;
     return self;
@@ -95,19 +99,25 @@
     dispatch_queue_t myQueue = dispatch_queue_create("Download queue", NULL);
     dispatch_async(myQueue, ^{
         // Perform long running process
+        NSInteger oldIndex = _cellIndex;
         UIImage *image = [card download];
+
         dispatch_async(dispatch_get_main_queue(), ^{
             // Update the UI
-            if (image) {
+            if (image && oldIndex == _cellIndex) {
                 _imageField.image = image;
-                [self removeImageLayout];
+                [self addImageLayout];
             }
         });
     });
 }
 
-- (void)removeImageLayout {
+- (void)addImageLayout {
     [_imageWidthContraint setConstant:100];
+}
+
+- (void)removeImageLayout {
+    [_imageWidthContraint setConstant:0];
 }
 
 - (void)updateConstraints {

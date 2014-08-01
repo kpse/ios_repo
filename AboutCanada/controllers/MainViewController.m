@@ -52,13 +52,18 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    MainTableViewCell *cell = [[[MainTableViewCell alloc]
-            initWithStyle:UITableViewCellStyleDefault
-          reuseIdentifier:@"Cell"] autorelease];
-
-    [cell loadContent:_page.cards[indexPath.row]];
+    static NSString *CellIdentifier = @"MainTableViewCell";
+    MainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    cell = cell ? cell : [self createCell];
+    [cell loadContent:_page.cards[indexPath.row] forIndex:indexPath.row];
 
     return cell;
+}
+
+- (MainTableViewCell *)createCell {
+    return [[[MainTableViewCell alloc]
+            initWithStyle:UITableViewCellStyleDefault
+          reuseIdentifier:@"MainTableViewCell"] autorelease];
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -72,9 +77,8 @@
 
 }
 
-- (void) refreshData
-{
-    if(_page) {
+- (void)refreshData {
+    if (_page) {
         [_page release];
     }
     _page = [[[[JsonLoader new] autorelease] loadContent] retain];

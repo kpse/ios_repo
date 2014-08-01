@@ -13,6 +13,8 @@
 @property (nonatomic, strong) UITextView* descriptionField;
 @property (nonatomic, strong) UIImageView *imageField;
 
-- (UITableViewCell *)loadContent:(Card *)card;
+@property(atomic) NSInteger cellIndex;
+
+- (UITableViewCell *)loadContent:(Card *)card forIndex:(NSInteger)index;
 + (CGFloat)contentHeight:(Card *)card;
 @end
