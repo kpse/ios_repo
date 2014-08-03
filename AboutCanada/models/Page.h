@@ -8,8 +8,8 @@
 
 @interface Page : NSObject
 
-@property (strong, nonatomic) NSString *title;
-@property (strong, nonatomic) NSMutableArray *cards;
+@property (retain, nonatomic) NSString *title;
+@property (retain, nonatomic) NSMutableArray *cards;
 
 - (instancetype)initWithTitle:(NSString *)title rows:(NSArray *)rows;
 @end

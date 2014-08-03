@@ -9,11 +9,11 @@
 @class Card;
 @interface MainTableViewCell : UITableViewCell
 
-@property (nonatomic, strong) UILabel* titleField;
-@property (nonatomic, strong) UITextView* descriptionField;
-@property (nonatomic, strong) UIImageView *imageField;
+@property (nonatomic, retain) UILabel* titleField;
+@property (nonatomic, retain) UITextView* descriptionField;
+@property (nonatomic, retain) UIImageView *imageField;
 
-@property(atomic, strong) Card *card;
+@property(retain) Card *card;
 
 - (UITableViewCell *)loadContent:(Card *)card;
 + (CGFloat)contentHeight:(Card *)card;

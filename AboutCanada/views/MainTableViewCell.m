@@ -47,7 +47,7 @@
 }
 
 - (void)setUpDescriptionField {
-    _descriptionField = [[UITextView new] autorelease];
+    _descriptionField = [UITextView new];
     _descriptionField.textAlignment = NSTextAlignmentLeft;
     _descriptionField.font = [UIFont systemFontOfSize:14];
     _descriptionField.autoresizingMask = UIViewAutoresizingFlexibleHeight;
@@ -58,14 +58,14 @@
 }
 
 - (void)setUpImageField {
-    _imageField = [[UIImageView new] autorelease];
+    _imageField = [UIImageView new];
     _imageField.translatesAutoresizingMaskIntoConstraints = NO;
     _imageField.contentMode = UIViewContentModeScaleAspectFit;
     [self.contentView addSubview:_imageField];
 }
 
 - (void)setUpTitleField {
-    _titleField = [[UILabel new] autorelease];
+    _titleField = [UILabel new];
     _titleField.textAlignment = NSTextAlignmentCenter;
     _titleField.font = [UIFont boldSystemFontOfSize:16];
     _titleField.textColor = [UIColor blueColor];
@@ -165,6 +165,9 @@
 }
 
 - (void)dealloc {
+    [_titleField release];
+    [_imageField release];
+    [_descriptionField release];
     [_card release];
     [super dealloc];
 }
